@@ -1,0 +1,21 @@
+
+<div>
+    <p>Atualizar novo contato</p>
+    <form [formGroup]="contatoForm"  class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Nome</mat-label>
+          <input matInput placeholder="ex: José" formControlName="nome">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width" >
+          <mat-label>e-mail</mat-label>
+          <input matInput placeholder="ex: José" formControlName="email">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width" >
+            <mat-label>contato</mat-label>
+            <input matInput placeholder="ex: José" formControlName="contato">
+          </mat-form-field>
+          <button (click)='update()'  mat-raised-button color="primary">update</button>
+      </form>
+</div>
